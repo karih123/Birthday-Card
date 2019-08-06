@@ -1,0 +1,109 @@
+body ,html{
+	height: 100%;
+}
+#p{
+color:rgb(231, 131, 26);
+font-family: sans-serif; 
+}
+body{
+	background: #C9EDFF;
+ 	font-family:'Montserrat';
+ 	margin: 0;
+ 	display: grid;
+ 	grid-template-rows: auto;
+ 	justify-content:center;
+ 	align-items: center;
+}
+h1{
+ 	font-size: 5em;
+ 	text-shadow:5px 5px #C9EDFF, 8px 8px rgba(0,0,0,.19) ;
+ 	margin: 0;
+    animation: slide-tr 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+  h3{
+  	font-size: 1.5em;
+  	margin: 0 25px;
+
+  }
+  h3{
+
+  }
+h3:before, h3:after{
+	content: " ";
+	position:absolute;
+	border-top: 2px solid rgba(0,0,0, .3);
+}
+h3:nth-of-type(1):before{
+	width: 3%;
+	height: 4px;
+	margin: 3% 0 0 -4%;
+}
+
+h3:nth-of-type(1):after{
+	width: 5%;
+	height: 4px;
+	margin: 3% 0 0 4%;
+}
+h3:nth-of-type(2){
+	float: right;
+	margin-top:-5%;
+
+}
+h3:nth-of-type(2):before{
+	width: 170%;
+	height: 4px;
+	margin: 6% 0 0 -170%;
+}
+
+h3:nth-of-type(2):after{
+	width: 10%;
+	height: 4px;
+	margin: 6% 0 0 3%;
+}
+h1, h3 {
+	transform:matrix(1.00,-0.30,0.00,1.00,0,0);
+-ms-transform:matrix(1.00,-0.30,0.00,1.00,0,0);
+-webkit-transform:matrix(1.00,-0.30,0.00,1.00,0,0);
+}
+/*#container:before{
+	content: " ";
+	-webkit-clip-path: polygon(50% 0%, 61% 32%, 98% 35%, 68% 57%, 82% 94%, 49% 73%, 16% 93%, 31% 59%, 2% 35%, 38% 33%);
+    clip-path: polygon(50% 0%, 61% 32%, 98% 35%, 68% 57%, 82% 94%, 49% 73%, 16% 93%, 31% 59%, 2% 35%, 38% 33%);
+    background: rgba(0,0,0,.10);
+    position: fixed;
+    height: 750px;
+    width: 1000px;
+    top:0,left:0;bottom:0;right: 0;
+    margin: auto;
+    animation: scale-up-hor-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+   
+}*/
+
+@keyframes scale-up-hor-center {
+  0% {
+	transform:matrix(1.00,-0.30,0.00,1.00,0,0);
+    transform: scaleX(0.4) ;
+  }
+  100% {
+	transform:matrix(1.00,-0.30,0.00,1.00,0,0);
+    transform: scaleX(1);
+  }
+
+}
+
+@keyframes slide-tr {
+  0% {
+    transform: translateY(30px) translateX(-100px) matrix(1.00,-0.30,0.00,1.00,0,0);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) matrix(1.00,-0.30,0.00,1.00,0,0);
+  }
+}
+#wish{
+	width:300px;
+	border: 1px solid blue;
+	margin: 15px auto;
+	padding:0% 0% 50% 70%;
+	align-items: left;
+
+}

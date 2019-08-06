@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head>
+	<link rel="stylesheet" href="bday.css">
+</head>
+
+<body>
+
+<img id="myImage" onclick="changeImage()" src="cake.jpg" width="625" height="350">
+
+<p id="p"><em><u><b>Click on the cake ^.^</b></u></em></p>
+
+<embed src="happybday.wav" autostart="true" loop="false"
+width="2" height="0">
+</embed>
+<body>
+      <div id="container">
+      	<h3>the most beautiful girl in the world</h3>
+      	<h1>Happy Birthday Mahii </h1>
+      	<h3>thanks for being my soulmate</h3>
+      	</div>
+
+     
+</body>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("clickoff")) {
+        image.src = "cake.jpg";
+    } else {
+        image.src = "candle.gif";
+    }
+}
+</script>
+
+</body>
+</html>

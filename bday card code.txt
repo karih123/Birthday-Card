@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+#p{
+color:fuchsia;
+}
+</style>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="cake.jpg" width="500" height="500">
+
+<p id="p"><em><u>Click on the cake ^.^</u></em></p>
+
+<embed src="happybday.wav" autostart="true" loop="false"
+width="2" height="0">
+</embed>
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("clickoff")) {
+        image.src = "cake.jpg";
+    } else {
+        image.src = "candle.gif";
+    }
+}
+</script>
+
+</body>
+</html>
